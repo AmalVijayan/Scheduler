@@ -44,7 +44,10 @@ class UserAvailibility(User):
     """
     def userNotAvailable(self, start_date_time, end_date_time):
 
-        users_scheduled_events = self.scheduled_events.filter(start_date_time__gte=start_date_time,
-                                                              end_date_time__lte=end_date_time)
+        users_scheduled_events = self.scheduled_events.filter(start_date_time__lte=end_date_time,
+                                                              end_date_time__gte=start_date_time)
+        
+        # print(" \n\n >> USER >> : ", self.__dict__)
+        # print(" \n\n >> USER EVENTS >> : ", users_scheduled_events)
         if users_scheduled_events:
             return self.email

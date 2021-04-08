@@ -7,6 +7,7 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 from django.utils.timezone import make_aware
 from datetime import datetime 
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -82,3 +83,10 @@ class ScheduleViewSet(viewsets.ModelViewSet):
         updated = serializer.update(instance, serializer.data)
         op_serialize = scheduler_api.serializers.ScheduleDetailSerializer(updated, many=False)
         return Response({"message":"Successfully updated!", "data" : op_serialize.data}, status=status.HTTP_200_OK)
+
+
+class UserReadableViewset(viewsets.mixins.ListModelMixin,
+                          viewsets.mixins.RetrieveModelMixin,
+                                viewsets.GenericViewSet):
+    queryset = User.objects.all()
+    serializer_class = scheduler_api.serializers.UserSerializer

@@ -9,6 +9,7 @@ router = DefaultRouter()
 
 # Full CRUD-able APIs
 router.register(r'schedule', scheduler_api.views.ScheduleViewSet, basename='schedule')
+router.register(r'user', scheduler_api.views.UserReadableViewset, basename='user')
 
 urlpatterns = [
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
