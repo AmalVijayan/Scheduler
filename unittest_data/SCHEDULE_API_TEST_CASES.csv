@@ -1,0 +1,9 @@
+Method,title,startTime,endTime,users,Expected
+create_schedule,Not None,Future,Future,Available,201
+create_schedule,Not None,Past,Future,Available,400
+create_schedule,Not None,Future,Past,Available,400
+create_schedule,Not None,Future,Future,Not Available,400
+update_schedule,Not None,Future,Future,Available,200
+update_schedule,Not None,Past,Future,Available,400
+update_schedule,Not None,Future,Past,Available,400
+update_schedule,Not None,Future,Future,Not Available,400
