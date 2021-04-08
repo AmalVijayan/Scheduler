@@ -56,3 +56,13 @@ Django automatic admin
 Download and import into postman:  
   [SchedulerApp.postman_collection.json](https://drive.google.com/file/d/14pSLTEhGQ2AsBgtAG_sXnqf8o3uRDU4W/view?usp=sharing)
   
+## API TESTS
+
+### 1. LIST ALL USERS
+![](https://github.com/AmalVijayan/Scheduler/blob/master/artifacts/scheduler_1.png)
+
+### 2. CREATE A SCHEDULE
+![](https://github.com/AmalVijayan/Scheduler/blob/master/artifacts/scheduler_2.png)
+
+### 3. CREATE A SCHEDULE (CONFLICT)
+![](https://github.com/AmalVijayan/Scheduler/blob/master/artifacts/scheduler_3.png)
