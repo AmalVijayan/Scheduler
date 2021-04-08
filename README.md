@@ -54,4 +54,5 @@ Django automatic admin
 
 ### Postman API Collections:  
 Download and import into postman:  
-  [SchedulerApp.postman_collection.json](https://drive.google.com/file/d/14pSLTEhGQ2AsBgtAG_sXnqf8o3uRDU4W/view?usp=sharing) 
+  [SchedulerApp.postman_collection.json](https://drive.google.com/file/d/14pSLTEhGQ2AsBgtAG_sXnqf8o3uRDU4W/view?usp=sharing)
+  
