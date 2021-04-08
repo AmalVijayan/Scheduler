@@ -4,6 +4,6 @@ from .models import Schedule
 
 class ScheduleAdmin(admin.ModelAdmin):
     readonly_fields = ('id', )
-    list_display = ('__str__', 'id', 'title', 'date_time',)
+    list_display = ('__str__', 'id', 'title', 'start_date_time', 'end_date_time')
 
 admin.site.register(Schedule, ScheduleAdmin)
